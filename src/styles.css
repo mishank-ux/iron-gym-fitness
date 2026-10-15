@@ -266,3 +266,14 @@ h2 { font-size: 51px; }
   .enquiry-form { padding: 20px; }
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } *,*::before,*::after { animation: none !important; transition: none !important; } }
+
+.location-panel { min-height: 390px; background: var(--card); border: 1px solid var(--border); padding: 36px; display: flex; flex-direction: column; }
+.location-panel-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--muted-foreground); font-size: 9px; }
+.location-panel-top svg { color: var(--primary); }
+.location-panel-city { font-family: var(--font-display); font-size: 96px; line-height: 1; font-weight: 700; margin-top: 35px; }
+.location-panel-city span { color: var(--primary); }
+.location-panel-area { font-size: 23px; font-family: var(--font-display); margin-top: 10px; }
+.location-panel-landmark { color: var(--muted-foreground); font-size: 12px; margin-top: 15px; }
+.location-panel-link { display: flex; align-items: center; justify-content: space-between; gap: 15px; border-top: 1px solid var(--border); padding-top: 20px; margin-top: auto; font-size: 12px; font-weight: 600; }
+.location-panel-link svg { color: var(--primary); flex-shrink: 0; }
+@media(max-width:767px) { .location-panel { padding: 26px; min-height: 370px; } .location-panel-city { font-size: 84px; } }
